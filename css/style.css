@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'LeksaSansPro-Light';
+    src: url(../fonts/LeksaSansPro-Light.ttf); /* Путь к файлу со шрифтом */
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'LeksaSansPro';
+    src: url(../fonts/LeksaSansPro.ttf); /* Путь к файлу со шрифтом */
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/Robotolight.woff2') format('woff2'), url('../fonts/Robotolight.woff') format('woff'), url('../fonts/Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+html {
+    font-size: 1px;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-color: #F1EAE0;
+}
+.slider-box {
+    width: calc(100% - 20rem);
+    height: 572rem;
+    margin: auto 0;
+    padding: 0 10rem;
+    background-image: url(../images/page-bg.png);
+    background-position: 100% 0;
+    background-size: 321rem;
+    background-repeat: no-repeat;
+}
+.owl-carousel {
+    width: 100%;
+    max-width: 1160rem;
+    margin: 0 auto;
+}
+.owl-carousel .owl-carousel__item {
+    display: flex;
+    align-items: flex-start;
+}
+.slide-image {
+    position: relative;
+    width: 560rem;
+}
+.slide-image .slide-image__date {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 145rem;
+    height: 40rem;
+    background-color: #00305F;
+    margin: 0;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    font-size: 14rem;
+    line-height: 1;
+    font-weight: 300;
+    color: #fff;
+}
+.slide-content {
+    width: 600rem;
+    margin: 0 0 0 -280rem;
+    background-color: #fff;
+    padding: 0 0 30rem 280rem;
+}
+.slide-content__date {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+    background-color: #00305F;
+    margin: 0;
+    padding: 0 40rem;
+    font-size: 24rem;
+    line-height: 28.8rem;
+    font-weight: 300;
+    color: #fff;
+}
+.slide-content__title {
+    margin: 30rem 40rem 60rem;
+}
+.title-name {
+    font-family: 'LeksaSansPro';
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 31rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0 0 20rem;
+    color: #00305F;
+}
+.title-post {
+    font-family: 'LeksaSansPro-Light';
+    font-size: 16rem;
+    font-weight: 300;
+    line-height: 20.8rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0;
+    color: #00305F;
+}
+h3 {
+    font-family: 'LeksaSansPro';
+    font-size: 32rem;
+    font-weight: 400;
+    line-height: 42rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin: 0 40rem 30rem;
+    color: #00305F;
+}
+.slide-content__info {
+    font-family: 'Roboto';
+    font-size: 16rem;
+    font-weight: 300;
+    line-height: 24rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 40rem 40rem;
+    color: #00305F;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 148rem;
+    height: 28rem;
+    border: 1rem solid #BA9F67;
+    background-color: #BA9F67;
+    font-size: 14rem;
+    line-height: 1;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    margin: 0 0 0 40rem;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #BA9F67;
+}
+.owl-nav {
+    position: absolute;
+    right: 200rem;
+    bottom: 0;
+    width: 358rem;
+    display: flex;
+    justify-content: space-between;
+}
+.prev, .next {
+    position: relative;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: #BA9F6799;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prev img {
+    width: 18rem;
+}
+.next img {
+    width: 18rem;
+    transform: rotate(180deg);
+}
+.owl-dots {
+    position: absolute;
+    right: 270rem;
+    bottom: 20rem;
+    width: 220rem;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-dots .owl-dot {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: #BA9F6799 !important;
+}
+.owl-dots .owl-dot.active {
+    background: #00305F !important;
+}
+@media screen and (max-width: 1179px) {
+    html {
+        font-size: .8px;
+    }
+}
+@media screen and (max-width: 980px) {
+    html {
+        font-size: .7px;
+    }
+}
+@media screen and (max-width: 980px) {
+    html {
+        font-size: .6px;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 1px;
+    }
+    .owl-carousel {
+        max-width: 300rem;
+    }
+    .slider-box {
+        height: auto;
+        background-image: none;
+    }
+    .owl-carousel .owl-carousel__item {
+        flex-direction: column-reverse;
+    }
+    .slide-image {
+        width: 100%;
+    }
+    .slide-image .slide-image__date {
+        display: flex;
+    }
+    .slide-content {
+        width: calc(100% - 20rem);
+        margin: 0;
+        padding: 60rem 10rem 25rem;
+    }
+    .slide-content__date {
+        display: none;
+    }
+    .slide-content__title {
+        display: flex;
+        margin: 0 0 20rem;
+    }
+    .title-name {
+        font-size: 16rem;
+        line-height: 20.8rem;
+        margin: 0 20rem 0 0;
+    }
+    .title-post {
+        font-size: 14rem;
+        line-height: 18.2rem;
+    }
+    h3 {
+        font-size: 24rem;
+        line-height: 31.2rem;
+        margin: 0 0 20rem;
+    }
+    .slide-content__info {
+        font-size: 16rem;
+        line-height: 24rem;
+        margin: 0 0 20rem;
+    }
+    .btn {
+        width: 133rem;
+        margin: 0;
+    }
+    .owl-nav {
+        position: relative;
+        right: 0;
+        width: 100%;
+        max-width: 300rem;
+        margin: 20rem auto 0;
+    }
+    .prev, .next {
+        width: 30rem;
+        height: 30rem;
+    }
+    .prev img, .next img {
+        width: 11rem;
+    }
+    .owl-dots {
+        right: calc(50% - 65rem);
+        bottom: 10rem;
+        width: 130rem;
+    }
+    .owl-dots .owl-dot {
+        width: 6rem;
+        height: 6rem;
+    }
+}
